@@ -9,9 +9,10 @@ public class CustomerController {
 	
 	@RequestMapping("/hello")
 	public ModelAndView hello(){
-		ModelAndView obj = new ModelAndView();
-		obj.setViewName("hello");
-		return obj;
+		ModelAndView modelAndViewObj = new ModelAndView();
+		modelAndViewObj.setViewName("hello");
+		modelAndViewObj.addObject("name","Lezil");
+		return modelAndViewObj;
 	}
 
 }
