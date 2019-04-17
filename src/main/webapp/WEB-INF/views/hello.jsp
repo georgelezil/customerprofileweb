@@ -12,5 +12,7 @@
 		String obj = (String) request.getAttribute("name");
 		out.println("obj :" + obj);
 	%>
+	
+	<b>${name}</b>
 </body>
 </html>
